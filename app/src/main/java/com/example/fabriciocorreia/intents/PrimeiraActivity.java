@@ -23,7 +23,7 @@ public class PrimeiraActivity extends AppCompatActivity {
         setContentView(R.layout.activity_primeira);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        preferences = getSharedPreferences("peferences",0);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

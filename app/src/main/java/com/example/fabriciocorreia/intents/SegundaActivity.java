@@ -37,7 +37,11 @@ public class SegundaActivity extends Activity {
             @Override
             public void onClick(View v) {
                Intent ligar = new Intent(Intent.ACTION_CALL, Uri.parse("tel:34936487"));
-                startActivity(ligar);
+                try{
+                    startActivity(ligar);
+                }catch(SecurityException e){
+
+                }
             }
         });
     }
